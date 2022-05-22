@@ -29,6 +29,16 @@ address {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Logo */
@@ -71,15 +81,29 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 /* Hero */
 
 .hero {
   background-color: var(--title-bg-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -88,8 +112,8 @@ address {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /* Button */
@@ -102,6 +126,10 @@ address {
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
 }
 
 .button:hover,
@@ -111,12 +139,17 @@ address {
 
 /* Feature */
 
+.feature {
+  margin-bottom: 94px;
+}
+
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-list .text {
@@ -127,18 +160,29 @@ address {
 
 /* Work */
 
+.work {
+  margin-bottom: 94px;
+}
+
 .work-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 /* Team */
 
 .team {
   background-color: var(--team-title-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-picture {
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -147,6 +191,7 @@ address {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team-list .title {
@@ -154,18 +199,22 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .team-list .position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 30px;
 }
 
 /* Footer */
 
 footer {
   background-color: var(--title-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo-first {
@@ -174,6 +223,8 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer-logo-second {
@@ -185,6 +236,10 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.footer-address li {
+  margin-bottom: 9px;
 }
 
 .footer-address .link {
