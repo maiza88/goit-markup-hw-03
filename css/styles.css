@@ -256,32 +256,12 @@ footer {
 
 /* Portfolio */
 
-.project-list .name {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+.filter {
+  padding-top: 52px;
+  padding-bottom: 136px;
 }
 
-.project-list .description {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
-}
-
-.filter .button-primary {
-  color: var(--secondary-title-text-color);
-  background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  font-family: inherit;
-}
-
-.filter .button-secondary {
+.filter-button {
   color: var(--title-text-color);
   background-color: var(--button-secondary-color);
   font-weight: 500;
@@ -289,9 +269,44 @@ footer {
   line-height: 1.6;
   text-align: center;
   font-family: inherit;
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.filter-button.active {
+  color: var(--secondary-title-text-color);
+  background-color: var(--accent-color);
 }
 
 .filter .button-primary:hover,
 .filter .button-primary:focus {
   background-color: var(--button-hover-color);
+}
+
+.project-list .project-picture {
+  margin-bottom: 20px;
+}
+
+.project-list .name {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.project-list .description {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.filter .list {
+  /* margin-top: 52px; */
+  margin-bottom: 50px;
 }
