@@ -54,6 +54,7 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
 }
 
 .header-logo-second {
@@ -62,12 +63,33 @@ p {
 
 /* Navigation */
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -77,6 +99,15 @@ p {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .auth-nav .link {
@@ -95,10 +126,10 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Hero */
@@ -143,6 +174,14 @@ p {
 
 /* Feature */
 
+.feature-list {
+  display: flex;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -160,6 +199,14 @@ p {
 
 /* Work */
 
+.work-section {
+  padding-top: 0;
+}
+
+.work-list {
+  display: flex;
+}
+
 .work-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -169,14 +216,28 @@ p {
   margin-bottom: 50px;
 }
 
+.work-list .item {
+  margin-right: 30px;
+}
+
 /* Team */
 
 .team {
   background-color: var(--team-title-bg-color);
 }
 
-.team-picture {
-  margin-bottom: 30px;
+.team-list {
+  display: flex;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list .info-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-bg-color);
 }
 
 .team-title {
@@ -193,6 +254,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -200,7 +262,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Footer */
